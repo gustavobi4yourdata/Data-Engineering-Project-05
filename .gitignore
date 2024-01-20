@@ -1,0 +1,7 @@
+.venv
+.vscode
+logs
+poetry.lock
+
+
+.DS_Store
