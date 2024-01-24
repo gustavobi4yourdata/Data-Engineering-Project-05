@@ -6,9 +6,9 @@ WITH
           , employee_id
           , order_date
           , required_date
-          , ship_region	
+          , IFNULL(ship_region, "N/I") AS ship_region	
           , shipped_date	    	
-          , ship_via         AS shipper_id	        				
+          , ship_via                    AS shipper_id	        				
           , ship_name	        			
           , ship_address	    			
           , ship_city                 			

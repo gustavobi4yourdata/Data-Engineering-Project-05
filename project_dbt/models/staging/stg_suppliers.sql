@@ -7,12 +7,12 @@ WITH
           , contact_title
           , address
           , city
-          , region
+          , IFNULL(region, "N/I")   AS region
           , postal_code
           , country
           , phone
-          , fax
-          , homepage      	     				
+          , IFNULL(fax, "N/I")      AS fax
+          , IFNULL(homepage, "N/I") AS homepage      	     				
           FROM {{ source('northwind','suppliers') }}
     )
 SELECT * FROM source
