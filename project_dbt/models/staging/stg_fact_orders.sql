@@ -50,8 +50,8 @@ WITH
           , A.unit_price
           , A.units_in_stock
           , A.units_on_order
-          , A.total
-          , A.discount
+          , ROUND(A.total, 2)    AS total
+          , ROUND(A.discount, 2) AS discount
           FROM stg_order_details A
     INNER JOIN stg_orders        B ON A.order_id = B.order_id
     )
