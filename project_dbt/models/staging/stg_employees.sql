@@ -13,7 +13,7 @@ WITH
           , EXTRACT(YEAR FROM CURRENT_DATE()) - EXTRACT(YEAR FROM hire_date)  AS lenght_of_service
           , address	            			
           , city	            			
-          , region	            			
+          , IFNULL(region, "N/I")                                             AS region	            			
           , postal_code	        			
           , country	            			
           , home_phone	        			
