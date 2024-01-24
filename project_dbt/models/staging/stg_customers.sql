@@ -7,11 +7,11 @@ WITH
           , contact_title					
           , address	        				
           , city	        				
-          , region	        				
+          , IFNULL(region, "N/I") as region	        				
           , postal_code	    				
           , country	        				
           , phone	        				
-          , fax
+          , IFNULL(fax,"N/I")       as fax 
           FROM {{ source('northwind','customers') }}
     )    
 SELECT * FROM source  
