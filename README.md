@@ -7,6 +7,8 @@
 Este repositório tem como objetivo criar um pipeline de dados fim a fim usando as tecnologias dbt-core, o Data Warehouse moderno BigQuery e o Power Bi como ferramenta de data viz.
 O desenvolvimento do projeto leva em consideração os conceitos fundamentais de modelagem dimensional star schema.
 
+**YouTube**: Clique para assistir a instalação e configuração do projeto no [link](https://youtu.be/M-CgBBcNgfM?si=mPnnj8s2NDICzMj5)
+
 ### Abordagens do dbt-core:
 
 * **Criação do ambiente de desenvolvimento**: Instalação do dbt-core, criação de ambiente virtual, estrutura de pastas e diretórios e conexão remota com Biguery.
@@ -76,14 +78,12 @@ Data-Engineering-Project-05/
 │   ├── models/       # Modelo dbt-core (processo ETL)
 │       ├── marts/    # Instruções SQL
 │       ├── staging/  # Instruções SQL
-│   ├── Northwind/
-│       ├── tables/   # Dados importados para o BigQuery
 │   ├── seeds/
 │   ├── snapshot/
 │   └── tests/
 │── Northwind/
+│   ├── tables/       # Dados importados para o BigQuery
 │── PowerBI/
-
 ```
 
 ## Comandos de execução para rodar o projeto
