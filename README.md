@@ -157,7 +157,7 @@ dbt docs generate
 dbt docs serve
 ```
 ```bash
-# Remove arquivos temportários
+# Remove arquivos temporários
 dbt clean
 ```
 ## Contato
